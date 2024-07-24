@@ -94,17 +94,88 @@
 				<!-- Publications -->
 					<section id="publications" class="two">
 						<div class="container">
+						
+						<p>View my full list of publications:</p>
+						
+						<ul class="actions">
+							<a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-3300-3449" class="button"><i class="ai ai-orcid"></i> ORCID</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22baycroft%22&sort=date%20desc%2C%20bibcode%20desc&p_=0/" class="button"><i class="ai ai-ads"></i> NASA ADS</a>
+							<!-- <a href="#" class="button"><i class="ai ai-google-scholar"></i> Google Scholar</a> -->
+						</ul>
+
 
 							<header>
 								<h2>Highlighted Publications</h2>
 							</header>
+							
+						
 
 							<p>Here are some examples of publications that I have either lead or been involved in.</p>
 
 							<div class="row">
 								<div class="col-6 col-12-xsmall work-item">
+									<style>  
+									.popup-window {
+										position: fixed;
+										width: 80%;
+										height: 90%;
+										background: white;
+										border: 4px solid black;
+										padding: 10px;
+										margin: auto;
+										top: 0;
+										right: 0;
+										bottom: 0;
+										left: 0;
+										z-index: 10;
+										display: none;
+										
+										overflow-y: auto;
+									
+										> .contents {
+											display: flex;
+											flex-direction: row;
+											
+											> img {
+												flex: 1 0 0;
+												width: 50%;
+/* 												aspect-ratio: 1/1; */
+											}
+											
+											> .caption {
+												flex: 1 0 0;
+											}
+										}
+									}
+									</style>
+
+									<script>
+										// Show the pop-up window when the link is clicked
+										function openPopup(event, id) {
+										event.preventDefault();
+										document.getElementById(id).style.display = "block";
+										}
+										// Hide the pop-up window when the close button is clicked
+										function closePopup(id) {
+										document.getElementById(id).style.display = "none";
+										}
+									</script> 
 									<article class="item">
-										<a href="images/fig_HWvir.png" class="image fit"><img src="images/fig_HWvir.png" alt="" /></a>
+<!-- 										<a href="images/fig_HWvir.png" class="image fit"><img src="images/fig_HWvir.png" alt="" /></a> -->
+										<a href="#" onclick="openPopup(event, 'popup1')">
+										<img src="images/fig_HWvir.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup1">
+											<h1>New evidence about HW Vir's circumbinary planets from Hipparcos-Gaia astrometry and a reanalysis of the eclipse timing variations using nested sampling</h1>
+											<div class="contents">
+												<img src="images/fig_HWvir.png" alt="" />
+												<div class="caption">
+													<p style="line-height:0.8">Description: <br> <font size="2.5" > The post common-envelope eclipsing binary HW Virginis (HW Vir) has had many circumbinary companions proposed based on eclipse timing variations. Each proposed solution has lacked in predictability and orbital stability, leaving the origin of the eclipse timing variations an active area of research. Leveraging the catalogue of Hipparcos and Gaia proper motion anomalies, we show there is slight evidence for a circumbinary companion orbiting HW Vir. We place an upper limit in mass for such a companion which excludes some previously claimed companions. We also apply this method to V471 Tauri and confirm the non-detection of a previously claimed brown dwarf. We adapt the KIMA nested sampling code to analyse eclipse timing variations and re-analyse archival data on HW Vir, varying the order of the ephemeris that we fit for and the amount of the data that we use. Although signals are clearly present, we find two signals around 2500 and 4000-d periods that are not coherent between different chunks of the data, so are likely to not be of planetary origin. We analyse the whole data set and find the best solution to contain four signals. Of these four we argue the outermost is the most compatible with astrometry and thus the most likely to be of planetary nature. We posit the other three pseudo-periodic signals are caused by physical processes on the white dwarf. The eventual release of the full Gaia epoch astrometry is a promising way to confirm whether circumbinary planets exist around HW Vir (and other similar systems), and explore white dwarf physics. <br> <br> The plot on the top left show the sensitivity curve from the proper-motion anomaly with (1 and 3 sigma) confidence regions in green, the coloured points represent the planets found by various previous publication and by this work in purple. The purple points are the planets corresponding to the best fitting model, these are shown as vertical lines in the posterior histogram shown below. The analysis we do implies that not all of these signals can be planets, and the most likely planet is the longest period signal, which can be seen to lie on the prediction from the proper-motion anomaly. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup1')">Close</button>
+										</div> 
+										
 										<header>
 											<h3> New evidence about HW Vir's circumbinary planets from Hipparcos-Gaia astrometry and a reanalysis of the eclipse timing variations using nested sampling </h3>
 											<p style="font-size:18px; "> <em>Baycroft T. A</em>, <em>Triaud A. H. M. J</em>, and <em>Kervella P</em> </p>
@@ -115,8 +186,22 @@
 											</ul>
 										</header>
 									</article>
+									<!-- /////////////////////// -->
 									<article class="item">
-										<a href="images/fig_BEBOP1.png" class="image fit"><img src="images/fig_BEBOP1.png" alt="" /></a>
+										<a href="#" onclick="openPopup(event, 'popup2')">
+										<img src="images/fig_BEBOP1.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup2">
+											<h1>Radial-velocity discovery of a second planet in the TOI-1338/BEBOP-1 circumbinary system</h1>
+											<div class="contents">
+												<img src="images/fig_BEBOP1.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="3" > Circumbinary planets, those that orbit around both stars of a central binary star system, challenge our understanding of planet formation. With only 12 binary systems known to host circumbinary planets, identifying more of these planets, along with their physical properties, could help to discern some of the physical processes that govern planet formation. Here we analyse radial-velocity data obtained by the HARPS and ESPRESSO spectrographs and report the detection of BEBOP-1 c, a gas giant planet with a mass of 65.2 ± 11.8 Earth masses (M⊕) orbiting around both stars of an eclipsing binary star system with a period of 215.5 ± 3.3 days. The system TOI-1338, hereafter referred to as BEBOP-1, which also hosts the smaller and inner transiting planet TOI-1338 b, is only the second confirmed multiplanetary circumbinary system. We do not detect TOI-1338 b with radial-velocity data alone, and we can place an upper limit on its mass of 21.8 M⊕ with 99% confidence. TOI-1338 b is amenable to atmospheric characterization using JWST, so the BEBOP-1 system has the potential to act as a benchmark for circumbinary exo-atmospheric studies. <br> The plot on the left show the radial velocity curve of BEBOP-c, with the large points being binned to guide the eye. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup2')">Close</button>
+										</div> 
+										
 										<header>
 											<h3> Radial-velocity discovery of a second planet in the TOI-1338/BEBOP-1 circumbinary system </h3>
 											<p style="font-size:18px; "> <em>Standing M. R</em> et <em>al.</em> </p>
@@ -127,8 +212,25 @@
 											</ul>
 										</header>
 									</article>
+									<!-- /////////////////////// -->
 									<article class="item">
-										<a href="images/fig_speculoos2.png" class="image fit"><img src="images/fig_speculoos2.png" alt="" /></a>
+										<a href="#" onclick="openPopup(event, 'popup3')">
+										<img src="images/fig_speculoos2.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup3">
+											<h1>Two temperate super-Earths transiting a nearby late-type M dwarf</h1>
+											<div class="contents">
+												<img src="images/fig_speculoos2.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="1" > In the age of JWST, temperate terrestrial exoplanets transiting nearby late-type M dwarfs provide unique opportunities for characterising their atmospheres, as well as searching for biosignature gases. In this context, the benchmark TRAPPIST-1 planetary system has garnered the interest of a broad scientific community.
+We report here the discovery and validation of two temperate super-Earths transiting LP 890-9 (TOI-4306, SPECULOOS-2), a relatively low-activity nearby (32 pc) M6V star. The inner planet, LP 890-9 b, was first detected by TESS (and identified as TOI-4306.01) based on four sectors of data. Intensive photometric monitoring of the system with the SPECULOOS Southern Observatory then led to the discovery of a second outer transiting planet, LP 890-9 c (also identified as SPECULOOS-2 c), previously undetected by TESS. The orbital period of this second planet was later confirmed by MuSCAT3 follow-up observations.
+We first inferred the properties of the host star by analyzing its Lick/Kast optical and IRTF/SpeX near-infrared spectra, as well as its broadband spectral energy distribution, and Gaia parallax. We then derived the properties of the two planets by modelling multi-colour transit photometry from TESS, SPECULOOS-South, MuSCAT3, ExTrA, TRAPPIST-South, and SAINT-EX. Archival imaging, Gemini-South/Zorro high-resolution imaging, and Subaru/IRD radial velocities also support our planetary interpretation.
+With a mass of 0.118 ± 0.002 M⊙, a radius of 0.1556 ± 0.0086 R⊙, and an effective temperature of 2850 ± 75 K, LP 890-9 is the second-coolest star found to host planets, after TRAPPIST-1. The inner planet has an orbital period of 2.73 d, a radius of 1.320 −0.027+0.053 R⊕, and receives an incident stellar flux of 4.09 ± 0.12 S⊕. The outer planet has a similar size of 1.367 −0.039+0.055R⊕ and an orbital period of 8.46 d. With an incident stellar flux of 0.906 ± 0.026 S⊕, it is located within the conservative habitable zone, very close to its inner limit (runaway greenhouse). Although the masses of the two planets remain to be measured, we estimated their potential for atmospheric characterisation via transmission spectroscopy using a mass-radius relationship and found that, after the TRAPPIST-1 planets, LP 890-9 c is the second-most favourable habitable-zone terrestrial planet known so far (assuming for this comparison a similar atmosphere for all planets).
+The discovery of this remarkable system offers another rare opportunity to study temperate terrestrial planets around our smallest and coolest neighbours.</font> </p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup3')">Close</button>
+										</div> 
 										<header>
 											<h3> Two temperate super-Earths transiting a nearby late-type M dwarf </h3>
 											<p style="font-size:18px; "> <em>Delrez L</em> et <em>al.</em> </p>
@@ -139,10 +241,26 @@
 											</ul>
 										</header>
 									</article>
+									<!-- /////////////////////// -->
 								</div>
 								<div class="col-6 col-12-xsmall work-item">
 									<article class="item">
-										<a href="images/fig_prec2.png" class="image fit"><img src="images/fig_prec2.png" alt="" /></a>
+										<a href="#" onclick="openPopup(event, 'popup4')">
+										<img src="images/fig_prec2.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup4">
+											<h1>Improving circumbinary planet detections by fitting their binary's apsidal precession </h1>
+											<div class="contents">
+												<img src="images/fig_prec.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="2.5" > Apsidal precession in stellar binaries is the main non-Keplerian dynamical effect impacting the radial-velocities of a binary star system. Its presence can notably hide the presence of orbiting circumbinary planets because many fitting algorithms assume perfectly Keplerian motion. To first order, apsidal precession ( ω˙
+ ) can be accounted for by adding a linear term to the usual Keplerian model. We include apsidal precession in the kima package, an orbital fitter designed to detect and characterize planets from radial velocity data. In this paper, we detail this and other additions to kima that improve fitting for stellar binaries and circumbinary planets including corrections from general relativity. We then demonstrate that fitting for  ω˙
+  can improve the detection sensitivity to circumbinary exoplanets by up to an order of magnitude in some circumstances, particularly in the case of multiplanetary systems. In addition, we apply the algorithm to several real systems, producing a new measurement of aspidal precession in KOI-126 (a tight triple system), and a detection of  ω˙
+  in the Kepler-16 circumbinary system. Although apsidal precession is detected for Kepler-16, it does not have a large effect on the detection limit or the planetary parameters. We also derive an expression for the precession an outer planet would induce on the inner binary and compare the value this predicts with the one we detect. <br> <br> The plot on the top left shows the residuals of a simulated radial velocity dataset for a binary star from two analyses. We can see that the inclusion of apsidal precession into the fit leads to a large improvement in the residual scatter. This improvement can also be seen in the lower left panel, where the sensitivity to circumbinary planets is shown to improve. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup4')">Close</button>
+										</div> 
 										<header>
 											<h3> Improving circumbinary planet detections by fitting their binary's apsidal precession </h3>
 											<p style="font-size:18px; "> <em>Baycroft T. A</em> et <em>al.</em> </p>
@@ -153,8 +271,23 @@
 											</ul>
 										</header>
 									</article>
+									<!-- /////////////////////// -->
 									<article class="item">
-										<a href="images/fig_TIC172.png" class="image fit"><img src="images/fig_TIC172.png" alt="" /></a>
+										<a href="#" onclick="openPopup(event, 'popup5')">
+										<img src="images/fig_TIC172.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup5">
+											<h1>New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC 172900988 </h1>
+											<div class="contents">
+												<img src="images/fig_TIC172.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="2.5" > Ongoing ground-based radial-velocity observations seeking to detect circumbinary planets focus on single-lined binaries even though over 9 in every 10 binary systems in the solar neighbourhood are double lined. Double-lined binaries are on average brighter, and should in principle yield more precise radial velocities. However, as the two stars orbit one another, they produce a time-varying blending of their weak spectral lines. This makes an accurate measure of radial velocities difficult, producing a typical scatter of  10−15 ms−1
+ . This extra noise prevents the detection of most orbiting circumbinary planets. We develop two new data-driven approaches to disentangle the two stellar components of a double-lined binary, and extract accurate and precise radial velocities. Both approaches use a Gaussian process regression, with the first one working in the spectral domain, whereas the second works on cross-correlated spectra. We apply our new methods to TIC 172900988, a proposed circumbinary system with a double-lined binary, and detect a circumbinary planet with an orbital period of  150 d
+ , different than previously proposed. We also measure a significant residual scatter, which we speculate is caused by stellar activity. We show that our two data-driven methods outperform the traditionally used TODCOR and TODMOR, for that particular binary system. <br> <br> The diagram on the left shows the orbital configuration of the system. The two stars are in dark blue, the 6 previous potential solutions are in light blue, the stability threshold is shown in grey, we plot the posterior distribution for planets from our analysis in green with orbits crossing into the instability region in red. We see that the planet is found closer to the stability limit than the previous results. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup5')">Close</button>
+										</div> 
 										<header>
 											<h3> New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC 172900988 </h3>
 											<p style="font-size:18px; "> <em>Sairam L</em> et <em>al.</em> </p>
@@ -165,8 +298,21 @@
 											</ul>
 										</header>
 									</article>
+									<!-- /////////////////////// -->
 									<article class="item">
-										<a href="images/fig_GJ9404.png" class="image fit"><img src="images/fig_GJ9404.png" alt="" /></a>
+										<a href="#" onclick="openPopup(event, 'popup6')">
+										<img src="images/fig_GJ9404.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup6">
+											<h1>GJ 9404 b: A Confirmed Eccentric Planet, and not a Candidate</h1>
+											<div class="contents">
+												<img src="images/fig_GJ9404.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="2" > Eccentric orbits can be decomposed into a series of sine curves which affects how the false alarm probability is computed when using traditional periodograms on radial-velocity data. Here we show that a candidate exoplanet orbiting the M dwarf GJ 9404, identified by the HADES survey using data from the HARPS-N spectrograph, is in fact a bona fide planet on a highly eccentric orbit. Far from a candidate, GJ 9404b is detected with a high confidence. We reach our conclusion using two methods that assume Keplerian functions rather than sines to compute a detection probability, a Bayes Factor, and the false-inclusion probability periodogram. We compute these using nested sampling with kima. <br> <br> The plot on the left shows the radial velocity curve of the planet, the eccentricity and orientation of the orbit can be deduced from the shape. This would be one of the most eccentric short period planets orbiting an M-dwarf star. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup6')">Close</button>
+										</div> 
 										<header>
 											<h3> GJ 9404 b: A Confirmed Eccentric Planet, and not a Candidate </h3>
 											<p style="font-size:18px; "> <em>Baycroft T. A</em> et <em>al.</em> </p>
@@ -179,13 +325,7 @@
 									</article>
 								</div>
 							</div>
-						<p>View my full list of publications:</p>
-						<ul class="actions">
-							<a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-3300-3449" class="button"><i class="ai ai-orcid"></i> ORCID</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22baycroft%22&sort=date%20desc%2C%20bibcode%20desc&p_=0/" class="button"><i class="ai ai-ads"></i> NASA ADS</a>
-							<!-- <a href="#" class="button"><i class="ai ai-google-scholar"></i> Google Scholar</a> -->
-						</ul>
-
+						
 
 						</div>
 					</section>
@@ -227,6 +367,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
