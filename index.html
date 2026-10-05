@@ -98,7 +98,7 @@
 							<a class="image featured"><img src="images/Banner.png" alt="" /></a>
 
 							<p>Hi, I'm Tom! I am a T.D. Lee postdoctoral fellow at the Tsung-Dao Lee Institute, Shanghai Jiao Tong University.<br />
-								My research interests lie mainly in the field of Exoplanet science, discovering planets around stars other than our Sun, in particular planets orbiting around pairs of stars. I utilise a variety of different data (Photometric, Spectroscopic, Astrometric, ...) and combine with orbital dynamics to best detect and characterise exoplanetary systems. <br /> 
+								My research interests lie mainly in the field of Exoplanet science, discovering planets around stars other than our Sun and quantifying how common different types of planets are. I have a particular fondness for planets orbiting around pairs of stars. I utilise a variety of different data (Astrometric, Spectroscopic, Photometric ...) and combine with orbital dynamics to best detect and characterise exoplanetary systems. <br /> 
 								My other hobbies and interest include: Cooking, Choral Singing, and Board Games
 								</p>
 
@@ -113,7 +113,7 @@
 						
 						<ul class="actions">
 							<a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-3300-3449" class="button"><i class="ai ai-orcid"></i> ORCID</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22baycroft%22&sort=date%20desc%2C%20bibcode%20desc&p_=0/" class="button"><i class="ai ai-ads"></i> NASA ADS</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://scixplorer.org/search?p=1&q=author%3A%22baycroft%2C+T%22&sort=date+desc&d=astrophysics" class="button"><i class="ai ai-ads"></i> SciX (ADS)</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=4Jyf8CAAAAAJ&hl=en&oi=ao" class="button"><i class="ai ai-google-scholar"></i> Google Scholar</a>
 							
 							<!-- <a href="#" class="button"><i class="ai ai-google-scholar"></i> Google Scholar</a> -->
@@ -179,6 +179,33 @@
 									<!-- /////////////////////// -->
 									<article class="item">
 <!-- 										<a href="images/fig_HWvir.png" class="image fit"><img src="images/fig_HWvir.png" alt="" /></a> -->
+										<a href="#" onclick="openPopup(event, 'popup10')">
+										<img src="images/fig_kima_gaia.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup10">
+											<h1>Bayesian analysis of Gaia epoch astrometry and radial velocities with kima</h1>
+											<div class="contents">
+												<img src="images/fig_kima_gaia.png" alt="" />
+												<div class="caption">
+													<p style="line-height:0.8">Description: <br><br> <font size="4.5" > This paper presents an update to the kima codebase to allow for analysis of astrometric data from the Gaia telescope. This software paper presents the new models incorporated into kima: the GAIAmodel to analyse Gaia epoch astrometry and the RVGAIAmodel to jointly model Gaia astrometry with radial velocity data, and tests these on various datasets. Demonstration of the use of these models to assess potential false-positive signals and to calculate detection limits are showcased. The documentation  for kima is available here: <a target="_blank" href="https://www.kima.science/"> https://www.kima.science/ </a> <br><br> In the plot shown here, an output from kima is shown for an astrometrically detected planet. The panels show the paralactic motion, the orbit, and the residuals. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup10')">Close</button>
+										</div> 
+										
+										<header>
+											<h3> Bayesian analysis of Gaia epoch astrometry and radial velocities with kima </h3>
+											<p style="font-size:18px; "> <em>Baycroft T. A</em> et <em>al.</em>  </p>
+											<h4> <em>A&A</em> </h4>
+											<ul class="icons">
+												<li><a target="_blank" rel="noopener noreferrer" href="https://scixplorer.org/abs/2026arXiv260624132B/abstract" class="ai ai-ads"></a></li>
+												<li><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2606.24132" class="icon fa-regular fa-file-pdf"></a></li>
+											</ul>
+										</header>
+									</article>
+									
+									<article class="item">
+<!-- 										<a href="images/fig_HWvir.png" class="image fit"><img src="images/fig_HWvir.png" alt="" /></a> -->
 										<a href="#" onclick="openPopup(event, 'popup9')">
 										<img src="images/fig_BEBOP3.png" style="width:100%" alt="" />
 										</a>
@@ -214,7 +241,7 @@
 											<div class="contents">
 												<img src="images/fig_HWvir.png" alt="" />
 												<div class="caption">
-													<p style="line-height:0.8">Description: <br> <font size="3.5" > The post common-envelope eclipsing binary HW Virginis (HW Vir) has had many circumbinary companions proposed based on eclipse timing variations. Each proposed solution has lacked in predictability and orbital stability, leaving the origin of the eclipse timing variations an active area of research. Leveraging the catalogue of Hipparcos and Gaia proper motion anomalies, we show there is slight evidence for a circumbinary companion orbiting HW Vir. We place an upper limit in mass for such a companion which excludes some previously claimed companions. We also apply this method to V471 Tauri and confirm the non-detection of a previously claimed brown dwarf. We adapt the KIMA nested sampling code to analyse eclipse timing variations and re-analyse archival data on HW Vir, varying the order of the ephemeris that we fit for and the amount of the data that we use. Although signals are clearly present, we find two signals around 2500 and 4000-d periods that are not coherent between different chunks of the data, so are likely to not be of planetary origin. We analyse the whole data set and find the best solution to contain four signals. Of these four we argue the outermost is the most compatible with astrometry and thus the most likely to be of planetary nature. We posit the other three pseudo-periodic signals are caused by physical processes on the white dwarf. The eventual release of the full Gaia epoch astrometry is a promising way to confirm whether circumbinary planets exist around HW Vir (and other similar systems), and explore white dwarf physics. <br> <br> The plot on the top left show the sensitivity curve from the proper-motion anomaly with (1 and 3 sigma) confidence regions in green, the coloured points represent the planets found by various previous publication and by this work in purple. The purple points are the planets corresponding to the best fitting model, these are shown as vertical lines in the posterior histogram shown below. The analysis we do implies that not all of these signals can be planets, and the most likely planet is the longest period signal, which can be seen to lie on the prediction from the proper-motion anomaly. </font></p>
+													<p style="line-height:0.8">Description: <br> <font size="3.5" > The post common-envelope eclipsing binary HW Virginis (HW Vir) has had many circumbinary companions proposed based on eclipse timing variations. Each proposed solution has lacked in predictability and orbital stability, leaving the origin of the eclipse timing variations an active area of research. Leveraging the catalogue of Hipparcos and Gaia proper motion anomalies, we show there is slight evidence for a circumbinary companion orbiting HW Vir. We place an upper limit in mass for such a companion which excludes some previously claimed companions. We also apply this method to V471 Tauri and confirm the non-detection of a previously claimed brown dwarf. We adapt the kima nested sampling code to analyse eclipse timing variations and re-analyse archival data on HW Vir, varying the order of the ephemeris that we fit for and the amount of the data that we use. Although signals are clearly present, we find two signals around 2500 and 4000-d periods that are not coherent between different chunks of the data, so are likely to not be of planetary origin. We analyse the whole data set and find the best solution to contain four signals. Of these four we argue the outermost is the most compatible with astrometry and thus the most likely to be of planetary nature. We posit the other three pseudo-periodic signals are caused by physical processes on the white dwarf. The eventual release of the full Gaia epoch astrometry is a promising way to confirm whether circumbinary planets exist around HW Vir (and other similar systems), and explore white dwarf physics. <br> <br> The plot on the top left show the sensitivity curve from the proper-motion anomaly with (1 and 3 sigma) confidence regions in green, the coloured points represent the planets found by various previous publication and by this work in purple. The purple points are the planets corresponding to the best fitting model, these are shown as vertical lines in the posterior histogram shown below. The analysis we do implies that not all of these signals can be planets, and the most likely planet is the longest period signal, which can be seen to lie on the prediction from the proper-motion anomaly. </font></p>
 												</div>
 											</div>
 											<button onclick="closePopup('popup1')">Close</button>
@@ -313,6 +340,34 @@
 									<!-- /////////////////////// -->
 								</div>
 								<div class="col-6 col-12-xsmall work-item">
+									<article class="item">
+										<a href="#" onclick="openPopup(event, 'popup11')">
+										<img src="images/fig_CBP_gaia_pred.png" style="width:100%" alt="" />
+										</a>
+										<div class="popup-window" id="popup11">
+											<h1> Predicting Gaia astrometry's ability to constrain the populations of circumbinary planets</h1>
+											<div class="contents">
+												<img src="images/fig_CBP_gaia_pred.png" alt="" />
+												<div class="caption">
+													<p style="line-height:1">Description: <br> <font size="3.2" > This work provides a prediction of the impact that astrometric data from the Gaia space telescope will have on the sub-field of circumbinary exoplanets. <br />
+													Sets of synthetic populations of circumbinary planets and binaries are generated and we use the astrometric SNR to predict which will be detectable in Gaia data release 4 and data release 5. We find that the outcome is very sensitive to the input population, and that we cannot predict better than an approximate range of 10s-100s of detections in data release 4. However since this is so sensitive to the input population it shows how Gaia will be able to constrain the population of circumbinary gas giant planets.
+													We also investigate whether Gaia can detect the claimed circumbinary planets orbiting psot-common-envelope binaries. Compiling all 32 such candidates from the literature we find that in data release 5 Gaia should have strong constraints on 3 of them, and weak but still revealing constraints on an additional 8. Some of the main difficulties are that many of the candidates have predicted orbital periods longer that the time-span of the Gaia data where the data's ability to clearly rule on the presence of an orbit is uncertain. We also consider whether it could detect such planets around a populations of post-common-envelope binaries. <br />
+													The plot shows the distribution of detected circumbinary planets in our fiducial setup (there are 100x more than will actually be detected, this simply show the distribution) alongside the known population. The mass of the planets is shown by the colour. </font></p>
+												</div>
+											</div>
+											<button onclick="closePopup('popup11')">Close</button>
+										</div> 
+										<header>
+											<h3> Predicting Gaia astrometry's ability to constrain the populations of circumbinary planets </h3>
+											<p style="font-size:18px; "> <em>Baycroft T. A</em> et <em>al.</em> </p>
+											<h4> <em>MNRAS</em> </h4>
+											<ul class="icons">
+												<li><a target="_blank" rel="noopener noreferrer" href="https://scixplorer.org/abs/2026MNRAS.547ag450B/abstract" class="ai ai-ads"></a></li>
+												<li><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2603.02198" class="icon fa-regular fa-file-pdf"></a></li>
+											</ul>
+										</header>
+									</article>
+									<!-- /////////////////////// -->
 									<article class="item">
 										<a href="#" onclick="openPopup(event, 'popup7')">
 										<img src="images/fig_2M1510.png" style="width:100%" alt="" />
